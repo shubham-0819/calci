@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calci : Only calculator you ever needed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="screen">
+        <p id="output" contenteditable="true"></p>
+    </div>
+    <div class="container">
+        <div class="buttons operator" onclick="concatExpression('&#40;')"><h2>(</h2></div>
+        <div class="buttons operator" onclick="concatExpression('&#41;')" ><h2>)</h2></div>
+        <div class="buttons operator" onclick="concatExpression('%')"><h2>%</h2></div>
+        <div class="buttons operator" onclick="clearExpression()"><h2>CE</h2></div>
+        <div class="buttons" onclick="concatExpression('7')"><h2>7</h2></div>
+        <div class="buttons" onclick="concatExpression('8')"><h2>8</h2></div>
+        <div class="buttons" onclick="concatExpression('9')"><h2>9</h2></div>
+        <div class="buttons operator" onclick="concatExpression('&#37;')"><h2>%</h2></div>
+        <div class="buttons" onclick="concatExpression('4')"><h2>4</h2></div>
+        <div class="buttons" onclick="concatExpression('5')"><h2>5</h2></div>
+        <div class="buttons" onclick="concatExpression('6')"><h2>6</h2></div>
+        <div class="buttons operator" onclick="concatExpression('&#42;')"><h2>*</h2></div>
+        <div class="buttons" onclick="concatExpression('1')"><h2>1</h2></div>
+        <div class="buttons" onclick="concatExpression('2')"><h2>2</h2></div>
+        <div class="buttons" onclick="concatExpression('3')"><h2>3</h2></div>
+        <div class="buttons operator" onclick="concatExpression('&#45;')"><h2>-</h2></div>
+        <div class="buttons" onclick="concatExpression('0')"><h2>0</h2></div>
+        <div class="buttons" onclick="concatExpression('&#46;')"><h2>.</h2></div>
+        <div class="buttons operator result" onclick="showResult()" onkeypress="showResult()"><h2>=</h2></div>
+        <div class="buttons operator" onclick="concatExpression('&#43;')"><h2>+</h2></div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
